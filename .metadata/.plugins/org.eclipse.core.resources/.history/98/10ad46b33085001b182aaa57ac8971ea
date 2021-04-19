@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>WAP Online Dictionary</title>
+		<link href="dict.css" type="text/css" rel="stylesheet">
+	    <script src="jQuery-3.6.0.js"></script>
+	    <script src="dict.js"></script>
+	</head>
+	<body>
+	<%@ page import="com.miu.Entry" %>
+		<div class="header">
+		<h1>WAP Online Dictionary</h1>
+		</div>
+		<div class="searchArea">
+			<form action="dictionary">
+				Term:<input type="text" name="word">
+					<input type="submit" value="Lookup">
+			</form>
+		</div>
+		<div class="result">
+		
+		<%  
+			// retrieve your list from the request, with casting 
+			Entry entry = (Entry) request.getAttribute("entry");
+			
+			// print the information about every category of the list
+			for(Category category : list) {
+			    out.println(category.getId());
+			    out.println(category.getName());
+			    out.println(category.getMainCategoryId());
+			}
+%>
+		
+		</div>
+	
+	</body>
+</html>

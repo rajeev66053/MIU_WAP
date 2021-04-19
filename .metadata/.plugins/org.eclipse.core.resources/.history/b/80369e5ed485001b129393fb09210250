@@ -1,0 +1,34 @@
+/*$(function(){
+	var term=$("#term").val();
+	$("#submit").click(function(){
+		console.log("dfs");
+		
+	  $.get("DictServlet", function(responseJson) {
+			var parsedJsonValue=JSON.parse(responseJson);
+	        var $ul = $("<ul>").appendTo($("#result"));
+	        $.each(parsedJsonValue, function(index, item) {
+	            $("<li>").text(item).appendTo($ul);
+	        });
+
+		});
+    });
+});*/
+
+$(document).ready(function() {	
+	$("#submit").click(function(e){		
+    	e.preventDefault();
+		
+		$.ajax({
+			"url": "foo/bar/mydata.txt",
+			"type": "GET",
+			"success": myAjaxSuccessFunction,
+			"error": ajaxFailure
+		});
+		function myAjaxSuccessFunction(data) {
+			// do something with the data
+		}
+		function ajaxFailure(xhr, status, exception) {
+			console.log(xhr, status, exception);
+		}
+		});
+});

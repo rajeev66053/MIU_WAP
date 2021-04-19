@@ -1,0 +1,40 @@
+/*$(function(){
+	var term=$("#term").val();
+	$("#submit").click(function(){
+		console.log("dfs");
+		
+	  $.get("DictServlet", function(responseJson) {
+			var parsedJsonValue=JSON.parse(responseJson);
+	        var $ul = $("<ul>").appendTo($("#result"));
+	        $.each(parsedJsonValue, function(index, item) {
+	            $("<li>").text(item).appendTo($ul);
+	        });
+
+		});
+    });
+});*/
+
+$(document).ready(function() {	
+	$("#submit").click(function(e){		
+    	e.preventDefault();
+		var word = $("#term").val();
+		
+		$.ajax({
+			"url": "DictServlet",
+			"type": "GET",
+			"data": { "word": word},
+			"success": myAjaxSuccessFunction,
+			"error": ajaxFailure
+		});
+		function myAjaxSuccessFunction(responseData) {
+			// do something with the data
+			var $ol = $("<ol>").appendTo($("#result"));
+	        $.each(responseData, function(index, item) {
+	            $("<li>").text("("+item.wordtype+") :: "+item.definition).appendTo($ol);
+	        });
+		}
+		function ajaxFailure(xhr, status, exception) {
+			console.log(xhr, status, exception);
+		}
+		});
+});

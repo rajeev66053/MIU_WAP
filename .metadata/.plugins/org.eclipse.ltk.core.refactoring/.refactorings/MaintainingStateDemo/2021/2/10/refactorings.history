@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;MaintainingStateDemo&apos; to &apos;MaintainingState&apos;&#x0D;&#x0A;- Original project: &apos;MaintainingStateDemo&apos;&#x0D;&#x0A;- Original element: &apos;MaintainingStateDemo&apos;&#x0D;&#x0A;- Renamed element: &apos;MaintainingState&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MaintainingStateDemo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{MaintainingStateDemo.java[MaintainingStateDemo" matchStrategy="1" name="MaintainingState" qualified="false" references="true" similarDeclarations="false" stamp="1614555080184" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,44 @@
+package com.miu;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Entry {
+	private String word;
+	private List<String> wordtype;
+	private List<String> definition;
+	
+	public String getWord() {
+		return word;
+	}
+	public void setWord(String word) {
+		this.word = word;
+	}
+	public List<String> getWordtype() {
+		return wordtype;
+	}
+	public void setWordtype(List<String> wordtype) {
+		this.wordtype = wordtype;
+	}
+	public List<String> getDefinition() {
+		return definition;
+	}
+	public void setDefinition(List<String> definition) {
+		this.definition = definition;
+	}
+	@Override
+	public String toString() {
+		return "Entry [word=" + word + ", wordtype=" + wordtype + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

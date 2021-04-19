@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;JSTLDemo/WebContent/NewFile.jsp&apos; to &apos;sql.jsp&apos;" description="Rename resource &apos;NewFile.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/NewFile.jsp" name="sql.jsp" stamp="1614605746798" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;JSTLDemo/WebContent/sql.jsp&apos; to &apos;sqltag.jsp&apos;" description="Rename resource &apos;sql.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/sql.jsp" name="sqltag.jsp" stamp="1614607150515" updateReferences="true"/>
+</session>

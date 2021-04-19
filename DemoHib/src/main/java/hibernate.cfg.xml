@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Add this file by right click on project,
+ Go to New,Go to Other,
+  type hibernate and choose hibernate.cfg.xml file.
+  To do this you have to install hibernate tool (jboss tool)  in eclipse form eclipse market place.
+   -->
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/neon</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <!-- <property name="hbm2ddl.auto">create</property> --> <!-- create all the require table for first time -->
+        <property name="hbm2ddl.auto">update</property> <!-- Add new row/update in database table -->
+        <property name="show_sql">true</property> <!-- Show sql query in console -->
+        <property name="hibernate.cache.use_second_level_cache">true</property><!-- For this we need to add ehcache dependency in maven and hibernate-ehcache dependency. Hibernate and hibernate-ehcache version must be same.Use only for hibernate get method not for query method. -->
+        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property>
+        <property name="hibernate.cache.use_query_cache">true</property><!-- It will enable second level caching for create Query method of hibernate -->
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,13 @@
+$(function(){
+	var term=$("#term").val();
+	$("#submit").click(function(){
+	  $.post("DictServlet",
+	  {
+	    term: term
+	  }, 
+	function(data, status){
+	    alert("Data: " + data + "\nStatus: " + status);
+	  });
+	});
+})
+

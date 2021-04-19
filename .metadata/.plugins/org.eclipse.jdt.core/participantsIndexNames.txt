@@ -1,0 +1,21 @@
+INDEX VERSION 1.131
+E:\java_new_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\694021076.index
+\Login\src
+E:\java_new_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2911470800.index
+\JSTLDemo\src
+E:\java_new_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3775643307.index
+\ExceptionHandlingJSP\src
+E:\java_new_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\158143693.index
+\JSTLSimpleCustomTagDemo\src
+E:\java_new_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\101319909.index
+\JSPServletQuizLab\src
+E:\java_new_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3628429.index
+\ServletFilter\src
+E:\java_new_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4219823992.index
+\JSTLForEachDemo\src
+E:\java_new_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1207239963.index
+\JSPDemo\src
+E:\java_new_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3785890005.index
+\JSPIntroDemo\src
+E:\java_new_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1418285249.index
+\OnlineDictionaryApp\src
